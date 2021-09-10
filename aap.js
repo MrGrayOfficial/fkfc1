@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.port || 80;
+const port = process.env.PORT || 8080;
 const db = require('./models/index');
 const bcrypt = require('bcrypt');
 const dotenv = require('dotenv');
