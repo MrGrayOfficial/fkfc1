@@ -1,16 +1,18 @@
 // <!-- ----------------Javascript for toggle menu---------------->
     var MenuItems = document.getElementById("MenuItems");
-
+    
     MenuItems.style.maxHeight = "0px";
 
     function menutoggle(){
         if(MenuItems.style.maxHeight == "0px")
             {
-                MenuItems.style.maxHeight = "200px";
+                MenuItems.style.maxHeight = "300px";
+                MenuItems.style.height = "300px";
             }
         else
             {
                 MenuItems.style.maxHeight = "0px";
+                MenuItems.style.height = "0px";
             }
     }
 
@@ -22,7 +24,7 @@ const userDetails = localStorage.getItem('userInfo')
 
 const signin = document.querySelector('#SIGNIN');
 
-signin.innerHTML = `${
+signin.innerHTML = `${ 
                         userDetails
                         ?
                         `
