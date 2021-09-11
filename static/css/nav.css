@@ -12,7 +12,10 @@
 
 
 #SIGNIN a{
-    color: rgb(8, 39, 218);
+    /* color: rgb(19, 54, 255); */
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+
 }
 
 /***************************** User Drop Down Menu *********************** */
@@ -49,7 +52,7 @@
     padding: 8px 10px;
     text-decoration: none;
     display: block;
-    background: rgb(158, 227, 255);
+    background: rgba(0, 0, 0, 0.438);
   }
   
   /* Change color of dropdown links on hover */
