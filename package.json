@@ -1,8 +1,8 @@
 {
-  "name": "redstore",
+  "name": "bluestar",
   "version": "1.0.0",
-  "description": "RedStore Ecommerce Website",
-  "main": "aap.js",
+  "description": "BlueStar Ecommerce Website",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"

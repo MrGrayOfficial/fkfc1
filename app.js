@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8080;
-const db = require('./models/index');
-const bcrypt = require('bcrypt');
+// const db = require('./models/index');
+// const bcrypt = require('bcrypt');
 const dotenv = require('dotenv');
-const jwt = require('jsonwebtoken');
+// const jwt = require('jsonwebtoken');
 const verifyToken = require('./utils');
 const home = require('./helpers/home');
 const products = require('./helpers/products');
