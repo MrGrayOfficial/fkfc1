@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-// mongoose.connect('mongodb://localhost/redstore');
 const DB = `mongodb+srv://bluestar:bluestar123@cluster0.uucjt.mongodb.net/bluestar?retryWrites=true&w=majority`;
 
 mongoose.connect(DB, {

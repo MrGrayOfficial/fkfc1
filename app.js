@@ -1,10 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8080;
-// const db = require('./models/index');
-// const bcrypt = require('bcrypt');
 const dotenv = require('dotenv');
-// const jwt = require('jsonwebtoken');
 const verifyToken = require('./utils');
 const home = require('./helpers/home');
 const products = require('./helpers/products');
@@ -21,7 +18,7 @@ const shipping = require('./helpers/shipping');
 // To load the environment variables in server environment
 dotenv.config();
 
-// Import module from dummy product to Add in Database
+// Import module from dummy product to Add Products in Database
 // const productss = require('./data/dummy-products');
 
 app.use('/static', express.static('static'));
