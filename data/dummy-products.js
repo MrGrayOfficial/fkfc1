@@ -2,7 +2,7 @@ class Product {
     constructor(name, img, imgGal, price, des, qtyInStock, rating){
         this.name = name;
         this.img = img;
-        this.imgGal = imgGal,
+        this.imgGal = imgGal;
         this.price = price;
         this.des = des;
         this.qtyInStock = qtyInStock;
