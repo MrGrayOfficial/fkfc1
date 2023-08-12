@@ -49,25 +49,29 @@
             placeholder="State"
             oninput="validate(this)"
             />
+            
             <input 
             required
-            type="tel"
-            maxlength="10"
-            minlength="10"
+            id="CONTACT"
+            type="number"
             name="contact" 
             placeholder="Contact no."
             oninput="validate(this)"
             />
+            <div id="contactErrorMessage"></div>
+
             <input 
             required
-            type="tel"
+            id="PIN"
+            type="number"
             name="pin" 
             placeholder="PIN no."
+            value=""
             oninput="validate(this)"
-            maxlength="6"
-            minlength="6"
             />
-            <button type="submit" class="btn">Continue</button>
+            <div id="pinErrorMessage"></div>
+
+            <button type="submit" class="btn btnStatus">Continue</button>
         </form>
     </div>
     <!-- ---------------Footer----------------- -->

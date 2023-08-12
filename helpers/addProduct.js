@@ -7,7 +7,7 @@ const addProduct = function(req,res){
     })
     .catch((err)=>{
         res.status(401).json({msg:"item does not found!"})
-    });
+    }); 
 }
 
 module.exports = addProduct;

@@ -6,7 +6,7 @@ mongoose.connect(DB, {
     useUnifiedTopology: true,
 })
     .then(()=>{console.log("Database Connection established successfully!")})
-    .catch(()=>{console.log("Database does not connected")});
+    .catch((err)=>{console.log("Database does not connected", err)});
     
 mongoose.Promise = Promise;
 

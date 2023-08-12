@@ -2,7 +2,7 @@
 .shipping-form-container{
     background: #fff;
     width: 300px;
-    height: 400px;
+    max-height: 426px;
     text-align: center;
     padding: 20px 0;
     margin: auto;
@@ -10,14 +10,7 @@
     margin: 80px auto;
 }
 
-.shipping-form-container span{
-    font-weight: bold;
-    padding: 0 10px;
-    color: #555;
-    cursor: pointer;
-    width: 100px;
-    display: inline-block;
-}
+
 
 .shipping-form-container form{
     max-width: 300px;
@@ -47,3 +40,23 @@ form a{
     font-size: 12px;
 }
 
+/* To remove up and down arrow from input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#contactErrorMessage p, #pinErrorMessage p{
+    color: red;
+    font-size: small;
+    float: left;
+    margin-top: -10px;
+}
+
+.btnStatu:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}

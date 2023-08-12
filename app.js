@@ -14,6 +14,7 @@ const signin = require('./helpers/signin');
 const signupAPI = require('./helpers/signupAPI');
 const signinAPI = require('./helpers/signinAPI');
 const shipping = require('./helpers/shipping');
+const order = require('./helpers/order');
 
 // To load the environment variables in server environment
 dotenv.config();
@@ -36,7 +37,7 @@ app.use(express.json());
 //             msg:err
 //         })
 //     })
-// })
+// }) 
 
 app.get('/',home);
 app.get('/products', products);
@@ -49,4 +50,5 @@ app.get('/signin', signin);
 app.post('/signup', signupAPI);
 app.post('/signin', signinAPI);
 app.get('/shipping/:token',verifyToken, shipping);
+app.get('/shipping/order/:token',verifyToken,order);
 app.listen(port, ()=>{console.log(`App is running successfully at port ${port}`)});
